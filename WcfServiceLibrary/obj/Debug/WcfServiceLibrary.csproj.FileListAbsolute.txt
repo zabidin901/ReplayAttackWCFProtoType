@@ -1,0 +1,5 @@
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll.config
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.dll
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\WcfServiceLibrary\bin\Debug\WcfServiceLibrary.pdb
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.dll
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\WcfServiceLibrary\obj\Debug\WcfServiceLibrary.pdb

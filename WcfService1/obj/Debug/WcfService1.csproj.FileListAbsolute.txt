@@ -1,0 +1,1 @@
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\WcfService1\obj\Debug\WcfService1.csprojResolveAssemblyReference.cache
