@@ -12,7 +12,7 @@ namespace SOAP_Service_with_WS_http_binding
     public interface IService1
     {
         [OperationContract]
-        string GetData(int value);
+        string GetData(string value);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

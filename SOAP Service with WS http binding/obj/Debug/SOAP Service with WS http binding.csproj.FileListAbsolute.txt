@@ -1,0 +1,6 @@
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service with WS http binding\bin\Debug\SOAP Service with WS http binding.dll.config
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service with WS http binding\bin\Debug\SOAP Service with WS http binding.dll
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service with WS http binding\bin\Debug\SOAP Service with WS http binding.pdb
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service with WS http binding\obj\Debug\SOAP Service with WS http binding.csprojResolveAssemblyReference.cache
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service with WS http binding\obj\Debug\SOAP Service with WS http binding.dll
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service with WS http binding\obj\Debug\SOAP Service with WS http binding.pdb

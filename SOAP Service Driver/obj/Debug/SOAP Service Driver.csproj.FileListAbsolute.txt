@@ -1,0 +1,13 @@
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\SOAP Service Driver.exe.config
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\SOAP Service Driver.exe
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\SOAP Service Driver.pdb
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\SOAP Service with WS http binding.dll
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\WcfServiceLibrary.dll
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\SOAP Service with WS http binding.pdb
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\bin\Debug\WcfServiceLibrary.pdb
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\obj\Debug\SOAP Service Driver.csprojResolveAssemblyReference.cache
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\obj\Debug\SOAP_Service_Driver.Form1.resources
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\obj\Debug\SOAP_Service_Driver.Properties.Resources.resources
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\obj\Debug\SOAP Service Driver.csproj.GenerateResource.Cache
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\obj\Debug\SOAP Service Driver.exe
+c:\users\zabidin\documents\visual studio 2013\Projects\ReplayAttackWCFPrototype\SOAP Service Driver\obj\Debug\SOAP Service Driver.pdb

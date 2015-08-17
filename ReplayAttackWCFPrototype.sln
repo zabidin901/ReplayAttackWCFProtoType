@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAP Service with basic htt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAP Service with WS http binding", "SOAP Service with WS http binding\SOAP Service with WS http binding.csproj", "{E0AC7D5C-BE5F-4219-ADE3-7CA27FAB9E54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAP Service Driver", "SOAP Service Driver\SOAP Service Driver.csproj", "{932B6541-B5DC-4712-8988-A853DDFD1C9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E0AC7D5C-BE5F-4219-ADE3-7CA27FAB9E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0AC7D5C-BE5F-4219-ADE3-7CA27FAB9E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0AC7D5C-BE5F-4219-ADE3-7CA27FAB9E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932B6541-B5DC-4712-8988-A853DDFD1C9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932B6541-B5DC-4712-8988-A853DDFD1C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932B6541-B5DC-4712-8988-A853DDFD1C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932B6541-B5DC-4712-8988-A853DDFD1C9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
