@@ -34,11 +34,11 @@ namespace SOAP_Service_Driver
             binding.Security.Mode = BasicHttpSecurityMode.None;
 
             Uri baseAddress = new Uri("http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService/");
-            Uri address = new Uri("http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService/basic");
+            Uri address = new Uri("http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService/mex");
 
             serviceHost = new ServiceHost(typeof(WcfServiceLibrary.BasicService), baseAddress);
 
-            serviceHost.AddServiceEndpoint(typeof(WcfServiceLibrary.IBasicService), binding, address);
+            serviceHost.AddServiceEndpoint(typeof(WcfServiceLibrary.IBasicService), binding, "");
 
             // Open the ServiceHostBase to create listeners and start listening for messages.
             //serviceHost.Open();
@@ -49,6 +49,28 @@ namespace SOAP_Service_Driver
             var _url = "http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService";
             var _action = "http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService?op=GetData";
 
+            XmlDocument soapEnvelopeXml = CreateSoapEnvelope();
+            HttpWebRequest webRequest = CreateWebRequest(_url, "");
+            InsertSoapEnvelopeIntoWebRequest(soapEnvelopeXml, webRequest);
+
+            // begin async call to web request.
+            IAsyncResult asyncResult = webRequest.BeginGetResponse(null, null);
+
+            // suspend this thread until call is complete. You might want to
+            // do something usefull here like update your UI.
+            asyncResult.AsyncWaitHandle.WaitOne();
+
+            // get the response from the completed web request.
+            string soapResult;
+            using (WebResponse webResponse = webRequest.EndGetResponse(asyncResult))
+            {
+                using (StreamReader rd = new StreamReader(webResponse.GetResponseStream()))
+                {
+                    soapResult = rd.ReadToEnd();
+                }
+                ReturnValue.Text = soapResult;
+            }
+
         }
 
         private void WSHTTPBindingButton_Click(object sender, EventArgs e)
@@ -56,12 +78,10 @@ namespace SOAP_Service_Driver
 
         }
 
-        private static HttpWebRequest CreateWebRequest(string url, string action)
+        public HttpWebRequest CreateWebRequest(string url, string soapAction)
         {
             HttpWebRequest webRequest = (HttpWebRequest)WebRequest.Create(url);
-            webRequest.Headers.Add("SOAPAction", action);
-            webRequest.ContentType = "text/xml;charset=\"utf-8\"";
-            webRequest.Accept = "text/xml";
+            webRequest.ContentType = "text/xml; charset=utf-8;";// action =\""+soapAction + "\"";
             webRequest.Method = "POST";
             return webRequest;
         }
@@ -69,12 +89,14 @@ namespace SOAP_Service_Driver
         private static XmlDocument CreateSoapEnvelope()
         {
             XmlDocument soapEnvelop = new XmlDocument();
-            soapEnvelop.LoadXml(@"<SOAP-ENV:Envelope xmlns:SOAP-ENV=""http://schemas.xmlsoap.org/soap/envelope/"" xmlns:xsi=""http://www.w3.org/1999/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/1999/XMLSchema"">
-            <SOAP-ENV:Body>
-                <GetData xmlns=""http://tempuri.org/"" SOAP-ENV:encodingStyle=""http://schemas.xmlsoap.org/soap/encoding/"">
-                    <Value></Value>
-                </GetData>
-            </SOAP-ENV:Body></SOAP-ENV:Envelope>");
+            soapEnvelop.LoadXml(@"<?xml version=""1.0"" encoding=""utf-8""?>
+                <soap:Envelope xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"" xmlns:xsd=""http://www.w3.org/2001/XMLSchema"" xmlns:soap=""http://schemas.xmlsoap.org/soap/envelope/"">
+                  <soap:Body>
+                    <GetData xmlns=""http://tempuri.org/"">
+                        <Value>""Hi""</Value>
+                    </GetData>
+                  </soap:Body>
+                </soap:Envelope>");
             return soapEnvelop;
         }
 
