@@ -46,36 +46,18 @@ namespace SOAP_Service_Driver
 
         private void BasicHttpBindingButtonHTTPBinding_Click(object sender, EventArgs e)
         {
-            var _url = "http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService";
-            var _action = "http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService?op=GetData";
+            BasicHttpBinding binding = new BasicHttpBinding();
 
-            XmlDocument soapEnvelopeXml = CreateSoapEnvelope();
-            HttpWebRequest webRequest = CreateWebRequest(_url, "");
-            InsertSoapEnvelopeIntoWebRequest(soapEnvelopeXml, webRequest);
+            EndpointAddress address = new EndpointAddress("http://localhost:8733/Design_Time_Addresses/WcfServiceLibrary/BasicService/");
 
-            // begin async call to web request.
-            IAsyncResult asyncResult = webRequest.BeginGetResponse(null, null);
+            WcfServiceLibrary.BasicService BasicClient = new WcfServiceLibrary.BasicService(binding, address);
 
-            // suspend this thread until call is complete. You might want to
-            // do something usefull here like update your UI.
-            asyncResult.AsyncWaitHandle.WaitOne();
-
-            // get the response from the completed web request.
-            string soapResult;
-            using (WebResponse webResponse = webRequest.EndGetResponse(asyncResult))
-            {
-                using (StreamReader rd = new StreamReader(webResponse.GetResponseStream()))
-                {
-                    soapResult = rd.ReadToEnd();
-                }
-                ReturnValue.Text = soapResult;
-            }
-
+            ReturnValue.Text = BasicClient.GetData(Value.Text);
         }
 
         private void WSHTTPBindingButton_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         public HttpWebRequest CreateWebRequest(string url, string soapAction)

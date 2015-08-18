@@ -1,0 +1,6 @@
+C:\Users\zabidin\Documents\Visual Studio 2013\Projects\ReplayAttackWCFPrototype\BasicServiceConsoleHost\bin\Debug\BasicServiceConsoleHost.exe.config
+C:\Users\zabidin\Documents\Visual Studio 2013\Projects\ReplayAttackWCFPrototype\BasicServiceConsoleHost\bin\Debug\BasicServiceConsoleHost.exe
+C:\Users\zabidin\Documents\Visual Studio 2013\Projects\ReplayAttackWCFPrototype\BasicServiceConsoleHost\bin\Debug\BasicServiceConsoleHost.pdb
+C:\Users\zabidin\Documents\Visual Studio 2013\Projects\ReplayAttackWCFPrototype\BasicServiceConsoleHost\obj\Debug\BasicServiceConsoleHost.csprojResolveAssemblyReference.cache
+C:\Users\zabidin\Documents\Visual Studio 2013\Projects\ReplayAttackWCFPrototype\BasicServiceConsoleHost\obj\Debug\BasicServiceConsoleHost.exe
+C:\Users\zabidin\Documents\Visual Studio 2013\Projects\ReplayAttackWCFPrototype\BasicServiceConsoleHost\obj\Debug\BasicServiceConsoleHost.pdb
